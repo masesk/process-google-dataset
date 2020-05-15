@@ -1,0 +1,139 @@
+body{
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(240, 240, 240, 0.788);
+    padding: 20px
+}
+
+h2{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn-1 {
+    margin-top: 50px;
+    background-color: #008d18;
+  }
+  .btn-1 .round {
+    background-color: #006411;
+    color: white;
+  }
+  
+  .btn-a a {
+      margin: 0 auto;
+      width: 320px;
+    text-decoration: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 12px 53px 12px 23px;
+  
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  a span {
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+  }
+  a .round {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+  }
+  a .round i {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 50%;
+    margin-left: -8px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .txt {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  
+  .type-1 a:hover {
+    padding-left: 48px;
+    padding-right: 38px;
+  }
+  .type-1 a:hover .round {
+    width: calc(100% - 6px);
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+  }
+  .type-1 a:hover .round i {
+    left: 20px;
+  }
+  
+
+  *:focus {
+    outline: 0;
+}
+
+.txt-gray {
+  color: #808080;
+}
+#g-range-container {
+    margin-top: 15px;
+  border-radius: 10px;
+  height: 10px;
+  padding-top: 6px;
+  border: 1px solid #CECECE;
+}
+#g-range-container .g-range {
+  width: 390px;
+  background-color: #72B2AA;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+#g-range-values-container {
+  width: 350px;
+  margin: 20px auto;
+}
+.txt-big-number {
+  text-align: center;
+  font-size: 20px;
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	background-color: black;
+  height: 4px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: 0px;
+	z-index: 1;
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+  background-color: #FFF;
+  border: 1px solid #CECECE;
+}
