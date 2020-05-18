@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Process Google Dataset",
+    "description": "This extension creates a dataset from a Google Image search.",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*tbm=isch*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "downloads",
+        "downloads.open",
+        "downloads.shelf"
+    ],
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html",
+        "default_title": "Process Google Dataset"
+    }
+}
