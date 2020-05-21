@@ -36,13 +36,6 @@ page and loading more data. The tool will retrive all the data it can see.
 ### Requirements
 
 * Python 3
-* PIP3
-
-### Installation
-
-1. (OPTIONAL) Create a  virutal enviroment using ```pip3 -m venv venv```
-2. (OPTIONAL) Activate virtual enviroment using ```. venv/bin/activate```
-3. Run ```pip install -r requirements.txt```
 
 ### How to use
 
