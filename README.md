@@ -1,4 +1,7 @@
 # procecss-google-dataset
+[![license](https://img.shields.io/github/license/masesk/process-google-dataset.svg)](https://github.com/masesk/process-google-dataset/blob/master/README.md)
+[![stars](https://img.shields.io/github/stars/masesk/process-google-dataset.svg?style=social)](https://github.com/masesk/process-google-dataset/stargazers)
+[![forks](https://img.shields.io/github/forks/masesk/process-google-dataset?style=social)](https://github.com/masesk/process-google-dataset/network/members)
 
 PGD is a toolchain that works on any operating system that is capable of running Chrome and Python. It has no limit to the number of images it can retrieve and download. It does not require any subprocess call or specific configuration.
 
@@ -36,13 +39,6 @@ page and loading more data. The tool will retrive all the data it can see.
 ### Requirements
 
 * Python 3
-* PIP3
-
-### Installation
-
-1. (OPTIONAL) Create a  virutal enviroment using ```pip3 -m venv venv```
-2. (OPTIONAL) Activate virtual enviroment using ```. venv/bin/activate```
-3. Run ```pip install -r requirements.txt```
 
 ### How to use
 
