@@ -3,6 +3,7 @@ import json
 import os
 import urllib.request
 import socket
+import platform
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -33,13 +34,15 @@ def download_images(json_path, output_dir, label, timeout):
 
                 try:
                     print(f"[{round(((total/len(d))*100))}%] Downloading", img)
-                    filepath = f"{output_dir}/{label}/{counter}{os.path.splitext(img)[1]}"
+                    filepath = f"{output_dir}/{label}/{counter}"
                     local_filename, headers = urllib.request.urlretrieve(
                         img, filepath)
                     if headers.get_content_maintype() != "image":
                         os.remove(filepath)
                         print("Skipped", img)
                         continue
+                    if platform.system() == "Windows":
+                        os.rename(filepath, f"{filepath}.{headers.get_content_subtype()}")
                     print("Downloaded", img)
                     counter += 1
                 except urllib.error.HTTPError:
