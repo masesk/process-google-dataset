@@ -67,9 +67,9 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         var text = document.createElement('div')
         overlay.setAttribute("id", "pgd_overlay")
         text.setAttribute("style", "color: white; padding-top: 25%; font-size: 55px; justify-content: center; align-items: center;text-align: center; vertical-align: middle;")
-        btn.setAttribute("style", "cursor: pointer; margin-top: 30px; margin-left: calc(50% - 150px); border-radius: 25px; color: dimgrey; font-size: 40px; justify-content: center; align-items: center; text-align: center; vertical-align: middle; width: 300px; background-color: aliceblue;")
+        btn.setAttribute("style", "padding: 20px; cursor: pointer; margin-top: 30px; margin-left: calc(50% - 150px); border-radius: 25px; color: dimgrey; font-size: 30px; justify-content: center; align-items: center; text-align: center; vertical-align: middle; width: 300px; background-color: aliceblue;")
         text.innerHTML = "Parsing Images...[ 0% ]"
-        btn.innerHTML = "Stop Parsing"
+        btn.innerHTML = "STOP PARSING"
         overlay.setAttribute("style", "overflow: hidden; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); z-index: 999; cursor: pointer;")
         disableScrolling()
         overlay.appendChild(text)
@@ -78,7 +78,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         var stopExecution = { value: false }
         getData(overlay, text, stopExecution, message.num)
         btn.addEventListener('click', event => {
-            btn.innerHTML = "Please wait..."
+            btn.innerHTML = "PLEASE WAIT..."
             btn.disabled = true;
             stopExecution.value = true
         });
