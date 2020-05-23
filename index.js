@@ -62,9 +62,9 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         return
     }
     if (message.action === "download") {
-        var overlay = document.createElement('div')
-        var btn = document.createElement('button')
-        var text = document.createElement('div')
+        const overlay = document.createElement('div')
+        const btn = document.createElement('button')
+        const text = document.createElement('div')
         overlay.setAttribute("id", "pgd_overlay")
         text.setAttribute("style", "color: white; padding-top: 25%; font-size: 55px; justify-content: center; align-items: center;text-align: center; vertical-align: middle;")
         btn.setAttribute("style", "padding: 20px; cursor: pointer; margin-top: 30px; margin-left: calc(50% - 150px); border-radius: 25px; color: dimgrey; font-size: 30px; justify-content: center; align-items: center; text-align: center; vertical-align: middle; width: 300px; background-color: aliceblue;")
@@ -75,7 +75,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         overlay.appendChild(text)
         overlay.appendChild(btn)
         document.body.appendChild(overlay)
-        var stopExecution = { value: false }
+        const stopExecution = { value: false }
         getData(overlay, text, stopExecution, message.num)
         btn.addEventListener('click', event => {
             btn.innerHTML = "PLEASE WAIT..."

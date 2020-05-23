@@ -11,7 +11,7 @@ parser.add_argument(
 parser.add_argument(
     '--label', help='Label your data to create a folder containing the pictures', required=True)
 parser.add_argument(
-    '--output-dir', help='Label your data to create a folder containing the pictures', required=True)
+    '--output-dir', help='Directory where the dataset will be stored.', required=True)
 parser.add_argument(
     '--timeout', help='Set the timeout time to stop trying to download an image', type=int, default=10)
 args = parser.parse_args()

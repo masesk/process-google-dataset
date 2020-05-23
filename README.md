@@ -3,7 +3,7 @@
 [![stars](https://img.shields.io/github/stars/masesk/process-google-dataset.svg?style=social)](https://github.com/masesk/process-google-dataset/stargazers)
 [![forks](https://img.shields.io/github/forks/masesk/process-google-dataset?style=social)](https://github.com/masesk/process-google-dataset/network/members)
 
-PGD is a toolchain that works on any operating system that is capable of running Chrome and Python. It has no limit to the number of images it can retrieve and download. It does not require any subprocess call or specific configuration.
+PGD is a tool that works on any operating system that is capable of running Chrome and Python. It has no limit to the number of images it can retrieve and download. It does not require any subprocess call or specific configuration.
 
 ## Google Extension
 
@@ -13,17 +13,17 @@ PGD is a toolchain that works on any operating system that is capable of running
 
 ### Installation
 
-#### Option 1
+#### Option 1 (Works on Linux)
 1. Download CRX file from [latest release](https://github.com/masesk/process-google-dataset/releases).
 2. Type ```chrome://extensions/``` in the *Chrome* browser top bar.
 3. Toggle ```Developer Mode``` switch on from the top right corner.
 4. Drag and drop the crx file to the middle of the window.
 
-#### Option 2
+#### Option 2 (Works on Windows and Linux)
 1. Clone the [process-google-dataset](https://github.com/masesk/process-google-dataset/) repo.
 2. Type ```chrome://extensions/``` in the *Chrome* browser top bar.
 3. Toggle ```Developer Mode``` switch on from the top right corner.
-4. Click ```Load Unpacked``` and select the cloned repo root directory.
+4. Click ```Load Unpacked``` and select the cloned repo directory.
 
 ### How to use
 
