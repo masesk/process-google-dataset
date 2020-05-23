@@ -29,9 +29,9 @@ def download_images(json_path, output_dir, label, timeout):
     try:
         with open(args.json_path) as f:
             d = json.load(f)
+            print(len(d))
             for img in d:
                 total += 1
-
                 try:
                     print(f"[{round(((total/len(d))*100))}%] Downloading", img)
                     filepath = f"{output_dir}/{label}/{counter}"
@@ -50,7 +50,7 @@ def download_images(json_path, output_dir, label, timeout):
                 except Exception:
                     print("Skipped", img)
     except FileNotFoundError as e:
-        print("error: invalid path for JSON file passed for argument --json")
+        print("error: invalid path for JSON file passed for argument --json-path")
 
 
 create_directory(args.output_dir, args.label)

@@ -47,6 +47,13 @@ a span {
   color: #fff;
 }
 
+.opt .round{
+  padding: 5px;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
+
 a .round {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -146,4 +153,21 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 40px;
   background-color: #FFF;
   border: 1px solid #CECECE;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.opt{
+  margin: 25px 0 25px 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }

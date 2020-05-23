@@ -8,25 +8,37 @@
 </head>
 
 <body>
-    <h2>Process Google Dataset v0.0.1</h1>
-    <p><span>Only works with <a id="googleImg" href="https://www.google.com/imghp" target="_blank">Google Images</a></span></p>
-    <label>Parse Speed in Seconds (Faster Internet = Lower)</label>
-    <div id="g-range-container" class="bg-gray">
-        <input class="g-range" value="3" type="range" id="g-range" min="0.5" max="20" step="0.5">
-    </div>
-    <div id="g-range-values-container" class="">
-        <p class="txt-big-number txt-gray" id="g-range-value">3</p>
-    </div>
-
-    <div class="type-1">
-        <div class="btn-a">
-            <a id="download" class="btn btn-1">
-                <span class="txt">Parse and Download Metadata</span>
-                <span class="round"><i class="fa fa-chevron-down"></i></span>
-            </a>
+    <h2>Process Google Dataset v0.0.3</h1>
+        <p><span>Only works with <a id="googleImg" href="https://www.google.com/imghp" target="_blank">Google
+                    Images</a></span></p>
+        <div class="opt">
+            <label>Number of Images to Parse:</label>
+            <div>
+                <a id="down" class="btn btn-1 round"><span ><i class="fa fa-chevron-down"></i></span></a>
+                <input type="number" id="parse-num" value="20" n
+                ame="parse-num" min="10" max="100">
+                <a id="up" class="btn btn-1 round"><span ><i class="fa fa-chevron-up"></i></span></a>
+            </div>
+        </div>
+        <div class="opt">
+            <label>Parse Speed in Seconds (Faster Internet = Lower)</label>
+            <div id="g-range-container" class="bg-gray">
+                <input class="g-range" value="1" type="range" id="g-range" min="0.3" max="20" step="0.1">
+            </div>
+            <div id="g-range-values-container" class="">
+                <p class="txt-big-number txt-gray" id="g-range-value">1</p>
+            </div>
         </div>
 
-    </div>
+        <div class="type-1">
+            <div class="btn-a">
+                <a id="download" class="btn btn-1">
+                    <span class="txt">Parse and Download Metadata</span>
+                    <span class="round"><i class="fa fa-chevron-down"></i></span>
+                </a>
+            </div>
+
+        </div>
 </body>
 
 </html>
